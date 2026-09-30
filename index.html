@@ -1,0 +1,1908 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Downtown Auto Detailing &amp; Repair — Because Every Detail Counts.</title>
+  <meta name="description" content="San Bruno's premier auto detailing, repair, classic restoration and collision. 25+ years of craftsmanship at 1145 San Mateo Ave. Call or WhatsApp 415-424-5807." />
+  <meta name="keywords" content="auto detailing San Bruno, car repair San Bruno, classic car restoration, collision repair, Downtown Auto Detailing" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Downtown Auto Detailing &amp; Repair" />
+  <meta property="og:description" content="Because every detail counts. Premium detailing, repair, restoration and collision — 25+ years in San Bruno, CA." />
+  <meta property="og:image" content="https://img1.wsimg.com/isteam/stock/98074/:/rs=h:1000,cg:true,m" />
+  <meta property="og:url" content="https://downtownautosf.com/" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Downtown Auto Detailing &amp; Repair" />
+  <meta name="twitter:description" content="San Bruno's premier auto detailing &amp; repair. 25+ years of excellence." />
+  <meta name="twitter:image" content="https://img1.wsimg.com/isteam/stock/98074/:/rs=h:1000,cg:true,m" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Inter:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "AutomotiveBusiness",
+    "name": "Downtown Auto Detailing & Repair",
+    "image": "https://img1.wsimg.com/isteam/stock/98074/:/rs=h:1000,cg:true,m",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1145 San Mateo Ave",
+      "addressLocality": "San Bruno",
+      "addressRegion": "CA",
+      "postalCode": "94066",
+      "addressCountry": "US"
+    },
+    "telephone": "+1-415-424-5807",
+    "email": "downtownautosf@gmail.com",
+    "openingHours": ["Mo-Fr 08:00-19:00", "Sa 08:00-17:00"],
+    "priceRange": "$$"
+  }
+  </script>
+
+  <style>
+    /* =============================================================
+       Downtown Auto Detailing & Repair — Design System
+       ============================================================= */
+    :root {
+      --bg: #0a0a0a;
+      --surface: #111111;
+      --surface-2: #1a1a1a;
+      --line: rgba(255,255,255,0.08);
+      --line-strong: rgba(255,255,255,0.16);
+      --text: #ffffff;
+      --text-dim: #aaaaaa;
+      --muted: #6b6b72;
+      --accent: #e63946;
+      --accent-strong: #ff4c5a;
+      --accent-glow: rgba(230,57,70,0.55);
+      --gold: #c9a84c;
+      --gold-glow: rgba(201,168,76,0.45);
+      --wa: #25D366;
+      --wa-dark: #128C7E;
+
+      --f-head: "Orbitron", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --f-body: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+
+      --radius: 18px;
+      --radius-sm: 12px;
+      --container: 1200px;
+      --shadow: 0 20px 60px rgba(0,0,0,0.6), 0 2px 6px rgba(0,0,0,0.4);
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--f-body);
+      font-size: 16px;
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; transition: color .25s ease; }
+    a:hover { color: var(--accent); }
+
+    .container {
+      width: 100%;
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section { padding: 120px 0; position: relative; }
+    .section-head { max-width: 780px; margin: 0 auto 64px; text-align: center; }
+
+    .kicker {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-family: var(--f-head);
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--accent);
+      border: 1px solid rgba(230,57,70,0.35);
+      background: rgba(230,57,70,0.06);
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--f-head);
+      font-weight: 900;
+      line-height: 1.15;
+      letter-spacing: 0.02em;
+      margin: 0 0 18px;
+      color: #fff;
+    }
+    h2 { font-size: clamp(30px, 3.6vw, 48px); }
+    h3 { font-size: clamp(20px, 2vw, 24px); font-weight: 700; }
+    p  { color: var(--text-dim); margin: 0 0 16px; }
+
+    /* Neon divider */
+    .neon-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--accent) 40%, var(--gold) 60%, transparent);
+      opacity: 0.55;
+      box-shadow: 0 0 20px var(--accent-glow), 0 0 40px var(--gold-glow);
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 13px 24px;
+      border-radius: 999px;
+      font-family: var(--f-head);
+      font-size: 12px;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      font-weight: 700;
+      cursor: pointer;
+      border: 1px solid transparent;
+      transition: transform .2s ease, box-shadow .3s ease, background .3s ease, color .3s ease, border-color .3s ease;
+      white-space: nowrap;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-lg { padding: 16px 30px; font-size: 13px; }
+    .btn i { font-size: 14px; }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--accent), #b02836);
+      color: #fff;
+      box-shadow: 0 12px 30px rgba(230,57,70,0.35);
+    }
+    .btn-primary:hover { color: #fff; box-shadow: 0 18px 42px rgba(230,57,70,0.55); }
+
+    .btn-wa {
+      background: linear-gradient(135deg, var(--wa), var(--wa-dark));
+      color: #fff;
+      box-shadow: 0 12px 30px rgba(37,211,102,0.28);
+    }
+    .btn-wa:hover { color: #fff; box-shadow: 0 18px 42px rgba(37,211,102,0.5); }
+
+    .btn-outline {
+      color: #fff;
+      border-color: rgba(255,255,255,0.35);
+      background: rgba(255,255,255,0.02);
+      backdrop-filter: blur(6px);
+    }
+    .btn-outline:hover { border-color: var(--gold); color: var(--gold); }
+
+    .btn-ghost {
+      color: #fff;
+      border-color: var(--line-strong);
+      background: rgba(255,255,255,0.03);
+    }
+    .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* =============================================================
+       Preloader
+       ============================================================= */
+    #preloader {
+      position: fixed; inset: 0; z-index: 9999;
+      background: radial-gradient(circle at center, #131313, #000);
+      display: grid; place-items: center;
+      transition: opacity .6s ease, visibility .6s ease;
+    }
+    #preloader.hide { opacity: 0; visibility: hidden; pointer-events: none; }
+    .pre-ring {
+      width: 84px; height: 84px; border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.08);
+      border-top-color: var(--accent);
+      border-right-color: var(--gold);
+      animation: spin 1s linear infinite;
+    }
+    .pre-text {
+      position: absolute;
+      bottom: 34%;
+      font-family: var(--f-head);
+      letter-spacing: 6px;
+      color: var(--text-dim);
+      font-size: 12px;
+      animation: pulse 1.4s ease-in-out infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes pulse { 0%,100% { opacity: .4 } 50% { opacity: 1 } }
+
+    /* =============================================================
+       Navbar
+       ============================================================= */
+    #navbar {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      background: transparent;
+      transition: background .3s ease, box-shadow .3s ease, backdrop-filter .3s ease, padding .3s ease;
+      padding: 16px 0;
+    }
+    #navbar.scrolled {
+      background: rgba(10,10,10,0.75);
+      backdrop-filter: blur(18px) saturate(140%);
+      -webkit-backdrop-filter: blur(18px) saturate(140%);
+      border-bottom: 1px solid var(--line);
+      padding: 10px 0;
+    }
+    .nav-inner {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+    .brand { display: flex; align-items: center; gap: 12px; color: #fff; }
+    .brand-mark {
+      width: 44px; height: 44px; border-radius: 12px;
+      display: grid; place-items: center;
+      background: linear-gradient(135deg, var(--accent), #7a1f27);
+      color: #fff; font-size: 17px;
+      box-shadow: 0 8px 22px rgba(230,57,70,0.45), inset 0 0 0 1px rgba(255,255,255,0.1);
+    }
+    .brand-text { display: flex; flex-direction: column; line-height: 1.05; }
+    .brand-name { font-family: var(--f-head); font-weight: 900; font-size: 16px; letter-spacing: 2px; }
+    .brand-sub  { font-size: 10px; letter-spacing: 3px; color: var(--text-dim); text-transform: uppercase; }
+
+    .nav-links { display: flex; gap: 32px; }
+    .nav-links a {
+      font-size: 12px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--text-dim);
+      position: relative;
+    }
+    .nav-links a::after {
+      content: ""; position: absolute; left: 0; bottom: -6px;
+      width: 0; height: 2px; background: var(--accent);
+      transition: width .3s ease;
+    }
+    .nav-links a:hover { color: #fff; }
+    .nav-links a:hover::after { width: 100%; }
+
+    .nav-cta { padding: 10px 20px; }
+
+    .nav-toggle {
+      display: none;
+      width: 40px; height: 40px;
+      background: transparent; border: 0; cursor: pointer;
+      flex-direction: column; justify-content: center; gap: 5px;
+      padding: 8px;
+    }
+    .nav-toggle span {
+      display: block; height: 2px; width: 100%;
+      background: #fff;
+      transition: transform .3s ease, opacity .3s ease;
+    }
+    .nav-toggle.open span:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+    .nav-toggle.open span:nth-child(2) { opacity: 0; }
+    .nav-toggle.open span:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+    .nav-mobile {
+      display: none;
+      flex-direction: column;
+      padding: 22px 24px;
+      background: rgba(10,10,10,0.97);
+      backdrop-filter: blur(20px);
+      border-top: 1px solid var(--line);
+      animation: slideDown .35s ease;
+    }
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .nav-mobile a {
+      padding: 14px 0;
+      font-family: var(--f-head);
+      font-size: 13px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-mobile .btn { margin-top: 16px; justify-content: center; }
+    .nav-mobile.show { display: flex; }
+
+    /* =============================================================
+       Hero
+       ============================================================= */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 140px 24px 100px;
+      overflow: hidden;
+      isolation: isolate;
+    }
+    .hero-bg {
+      position: absolute; inset: 0; z-index: -2;
+      will-change: transform;
+    }
+    .hero-bg img {
+      width: 100%; height: 115%; object-fit: cover;
+      filter: brightness(0.32) saturate(1.15) contrast(1.05);
+    }
+    .hero-vignette {
+      position: absolute; inset: 0; z-index: -1;
+      background:
+        radial-gradient(ellipse at 55% 45%, transparent 0%, rgba(0,0,0,0.55) 55%, #000 100%),
+        linear-gradient(180deg, rgba(10,10,10,0.35) 0%, rgba(10,10,10,0.95) 100%);
+    }
+    #hero-canvas {
+      position: absolute; inset: 0; z-index: -1;
+      width: 100%; height: 100%;
+      pointer-events: none;
+    }
+    .hero-content {
+      max-width: 940px;
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 10px;
+      padding: 8px 18px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,0.16);
+      background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(12px);
+      font-family: var(--f-head);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 26px;
+    }
+    .hero-badge .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 12px var(--accent);
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+    .hero-title {
+      font-size: clamp(42px, 8.2vw, 104px);
+      line-height: 0.98;
+      margin: 0 0 24px;
+      text-shadow: 0 10px 40px rgba(0,0,0,0.75);
+    }
+    .hero-title .line { display: block; }
+    .accent-line {
+      background: linear-gradient(90deg, var(--accent), var(--gold));
+      -webkit-background-clip: text; background-clip: text;
+      color: transparent;
+    }
+    .hero-sub {
+      font-size: clamp(16px, 2vw, 20px);
+      color: rgba(255,255,255,0.88);
+      max-width: 640px;
+      margin: 0 auto 40px;
+      letter-spacing: 0.4px;
+    }
+    .hero-cta {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 16px; margin-bottom: 60px;
+    }
+    .scroll-cue {
+      position: absolute; bottom: 28px; left: 50%;
+      transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      color: var(--text-dim);
+      font-family: var(--f-head);
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    .scroll-cue .arrow {
+      width: 32px; height: 32px;
+      border-right: 2px solid var(--accent);
+      border-bottom: 2px solid var(--accent);
+      transform: rotate(45deg);
+      animation: bounce 1.8s ease-in-out infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: rotate(45deg) translate(0,0); opacity: 0.4; }
+      50% { transform: rotate(45deg) translate(6px, 6px); opacity: 1; }
+    }
+
+    /* =============================================================
+       Reveal on scroll
+       ============================================================= */
+    .reveal { opacity: 0; transform: translateY(38px); transition: opacity .9s ease, transform .9s ease; }
+    .reveal.in { opacity: 1; transform: translateY(0); }
+    .reveal-left  { opacity: 0; transform: translateX(-40px); transition: opacity .9s ease, transform .9s ease; }
+    .reveal-left.in  { opacity: 1; transform: translateX(0); }
+    .reveal-right { opacity: 0; transform: translateX(40px); transition: opacity .9s ease, transform .9s ease; }
+    .reveal-right.in { opacity: 1; transform: translateX(0); }
+
+    /* =============================================================
+       Services
+       ============================================================= */
+    .services { background: var(--bg); }
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .glass {
+      background: linear-gradient(160deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      transition: border-color .3s ease, background .3s ease;
+    }
+    .service-card {
+      position: relative;
+      padding: 38px 28px 34px;
+      overflow: hidden;
+      transform-style: preserve-3d;
+    }
+    .service-card::before {
+      content: "";
+      position: absolute; inset: -1px;
+      border-radius: inherit;
+      padding: 1px;
+      background: linear-gradient(135deg, transparent, var(--accent) 50%, transparent);
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor; mask-composite: exclude;
+      opacity: 0; transition: opacity .35s ease;
+      pointer-events: none;
+    }
+    .service-card:hover::before { opacity: 1; }
+    .svc-icon {
+      width: 64px; height: 64px;
+      border-radius: 14px;
+      display: grid; place-items: center;
+      background: linear-gradient(135deg, rgba(230,57,70,0.18), rgba(201,168,76,0.08));
+      border: 1px solid rgba(230,57,70,0.28);
+      color: var(--accent);
+      font-size: 22px;
+      margin-bottom: 22px;
+      box-shadow: inset 0 0 22px rgba(230,57,70,0.12);
+    }
+    .service-card p { min-height: 96px; margin-bottom: 20px; }
+    .svc-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: var(--f-head);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+    .svc-link i { transition: transform .3s ease; }
+    .svc-link:hover { color: var(--accent); }
+    .svc-link:hover i { transform: translateX(4px); }
+
+    /* =============================================================
+       About
+       ============================================================= */
+    .about { background: linear-gradient(180deg, var(--bg) 0%, #050505 100%); }
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .about-media {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      aspect-ratio: 4 / 5;
+      box-shadow: var(--shadow);
+    }
+    .about-media img { width: 100%; height: 100%; object-fit: cover; filter: saturate(1.1); }
+    .about-media::after {
+      content: ""; position: absolute; inset: 0;
+      background: linear-gradient(180deg, transparent 50%, rgba(0,0,0,0.6) 100%);
+    }
+    .about-text p { font-size: 17px; color: rgba(255,255,255,0.82); }
+    .about-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-top: 34px;
+    }
+    .stat {
+      padding: 22px 18px;
+      border-radius: var(--radius-sm);
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--line);
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .stat::before {
+      content: ""; position: absolute; top: 0; left: 0;
+      width: 100%; height: 3px;
+      background: linear-gradient(90deg, var(--accent), var(--gold));
+    }
+    .stat-num {
+      font-family: var(--f-head);
+      font-size: clamp(30px, 3.4vw, 42px);
+      font-weight: 900;
+      background: linear-gradient(180deg, #fff, #a5a5aa);
+      -webkit-background-clip: text; background-clip: text;
+      color: transparent;
+      line-height: 1;
+    }
+    .stat-plus {
+      display: inline;
+      color: var(--gold);
+      font-family: var(--f-head);
+      font-size: 24px;
+      margin-left: 2px;
+    }
+    .stat-label {
+      display: block;
+      font-family: var(--f-head);
+      font-size: 10px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-top: 10px;
+    }
+
+    /* =============================================================
+       Brands marquee
+       ============================================================= */
+    .brands {
+      padding: 46px 0;
+      background: #050505;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      overflow: hidden;
+      position: relative;
+    }
+    .brands::before, .brands::after {
+      content: ""; position: absolute; top: 0; bottom: 0;
+      width: 140px; z-index: 2; pointer-events: none;
+    }
+    .brands::before { left: 0; background: linear-gradient(90deg, #050505, transparent); }
+    .brands::after  { right: 0; background: linear-gradient(270deg, #050505, transparent); }
+    .brands-title {
+      text-align: center;
+      font-family: var(--f-head);
+      font-size: 10px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+    .marquee { overflow: hidden; }
+    .marquee-track {
+      display: inline-flex;
+      gap: 40px;
+      padding-left: 40px;
+      animation: marquee 40s linear infinite;
+      white-space: nowrap;
+      font-family: var(--f-head);
+      font-size: clamp(18px, 2.4vw, 28px);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+    }
+    .marquee-track span:nth-child(even) { color: var(--accent); }
+    @keyframes marquee {
+      from { transform: translateX(0); }
+      to   { transform: translateX(-50%); }
+    }
+
+    /* =============================================================
+       Restoration video
+       ============================================================= */
+    .restoration { background: var(--bg); }
+    .video-wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .video-frame {
+      position: relative;
+      padding-bottom: 56.25%;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow), 0 0 60px rgba(230,57,70,0.2);
+    }
+    .video-frame iframe {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+
+    /* =============================================================
+       Gallery
+       ============================================================= */
+    .gallery { background: linear-gradient(180deg, var(--bg), #050505); }
+    .masonry {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-auto-rows: 200px;
+      gap: 12px;
+    }
+    .tile {
+      position: relative;
+      overflow: hidden;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--line);
+      cursor: zoom-in;
+    }
+    .tile.lg   { grid-column: span 2; grid-row: span 2; }
+    .tile.tall { grid-row: span 2; }
+    .tile img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform .8s cubic-bezier(0.2, 0.8, 0.2, 1), filter .5s ease;
+      filter: brightness(0.85);
+    }
+    .tile:hover img { transform: scale(1.08); filter: brightness(1); }
+    .tile::after {
+      content: "\f00e";
+      font-family: "Font Awesome 6 Free"; font-weight: 900;
+      position: absolute; top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff; font-size: 26px;
+      opacity: 0; transition: opacity .3s ease;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.75);
+    }
+    .tile:hover::after { opacity: 1; }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 1000;
+      background: rgba(0,0,0,0.95);
+      display: none;
+      align-items: center; justify-content: center;
+      padding: 40px;
+      animation: fadeIn .3s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .lightbox.open { display: flex; }
+    .lightbox img {
+      max-width: 92vw; max-height: 88vh;
+      border-radius: 12px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.9);
+    }
+    .lb-close, .lb-prev, .lb-next {
+      position: absolute;
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #fff; cursor: pointer;
+      border-radius: 50%;
+      transition: background .25s ease, transform .25s ease;
+    }
+    .lb-close { top: 24px; right: 24px; width: 46px; height: 46px; font-size: 24px; }
+    .lb-prev, .lb-next { top: 50%; transform: translateY(-50%); width: 52px; height: 52px; font-size: 18px; }
+    .lb-prev { left: 24px; }
+    .lb-next { right: 24px; }
+    .lb-close:hover, .lb-prev:hover, .lb-next:hover { background: var(--accent); border-color: var(--accent); }
+
+    /* =============================================================
+       Testimonials
+       ============================================================= */
+    .testimonials { background: #050505; }
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-bottom: 40px;
+    }
+    .review {
+      padding: 38px 34px;
+      position: relative;
+    }
+    .review::before {
+      content: "\201C";
+      position: absolute; top: 8px; left: 22px;
+      font-size: 86px;
+      font-family: Georgia, serif;
+      color: var(--accent);
+      opacity: 0.3;
+      line-height: 1;
+    }
+    .stars { color: var(--gold); letter-spacing: 2px; margin-bottom: 14px; }
+    .review blockquote {
+      margin: 0 0 20px;
+      font-size: 18px;
+      color: #fff;
+      font-style: italic;
+      line-height: 1.55;
+    }
+    .review figcaption {
+      font-family: var(--f-head);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      display: flex; align-items: center; gap: 8px;
+    }
+    .review figcaption i { color: #d32323; font-size: 14px; }
+    .yelp-cta { text-align: center; }
+
+    /* =============================================================
+       Pricing
+       ============================================================= */
+    .pricing { background: var(--bg); }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+      margin-bottom: 44px;
+    }
+    .price-card {
+      padding: 40px 28px;
+      text-align: center;
+      position: relative;
+    }
+    .price-card.featured {
+      border-color: rgba(201,168,76,0.5);
+      background: linear-gradient(160deg, rgba(201,168,76,0.08), rgba(255,255,255,0.02));
+      box-shadow: 0 20px 50px rgba(201,168,76,0.14);
+      transform: scale(1.03);
+    }
+    .ribbon {
+      position: absolute; top: 18px; right: -34px;
+      transform: rotate(35deg);
+      padding: 4px 40px;
+      background: linear-gradient(135deg, var(--gold), #8f7530);
+      color: #0a0a0a;
+      font-family: var(--f-head);
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 900;
+    }
+    .price {
+      display: flex; align-items: baseline; justify-content: center; gap: 4px;
+      margin: 18px 0 28px;
+      font-family: var(--f-head);
+    }
+    .price .dollar { color: var(--text-dim); font-size: 22px; }
+    .price .num {
+      font-size: 58px; font-weight: 900;
+      background: linear-gradient(180deg, #fff, #b0b0b6);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .price .unit { color: var(--text-dim); font-size: 13px; letter-spacing: 2px; text-transform: uppercase; }
+    .price-card ul {
+      list-style: none; padding: 0; margin: 0 0 28px;
+      text-align: left;
+    }
+    .price-card li {
+      padding: 10px 0;
+      color: var(--text-dim);
+      border-bottom: 1px solid var(--line);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .price-card li:last-child { border-bottom: 0; }
+    .price-card li i { color: var(--accent); font-size: 13px; }
+
+    .promo {
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(230,57,70,0.18), rgba(201,168,76,0.12));
+      border: 1px solid rgba(230,57,70,0.4);
+      overflow: hidden;
+      position: relative;
+    }
+    .promo::before {
+      content: ""; position: absolute; inset: 0;
+      background: repeating-linear-gradient(45deg, transparent, transparent 22px, rgba(255,255,255,0.025) 22px, rgba(255,255,255,0.025) 44px);
+    }
+    .promo-inner {
+      position: relative;
+      padding: 36px 40px;
+      display: flex; justify-content: space-between; align-items: center;
+      flex-wrap: wrap; gap: 22px;
+    }
+    .promo-tag {
+      display: inline-block;
+      padding: 4px 12px;
+      background: var(--accent);
+      color: #fff;
+      font-family: var(--f-head);
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .promo h3 { color: #fff; margin: 0 0 8px; }
+    .promo p { margin: 0; color: rgba(255,255,255,0.9); }
+
+    /* =============================================================
+       Contact
+       ============================================================= */
+    .contact { background: linear-gradient(180deg, #050505, var(--bg)); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+    }
+    .info-list { list-style: none; padding: 0; margin: 24px 0 22px; }
+    .info-list li {
+      display: flex; gap: 16px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line);
+      align-items: flex-start;
+    }
+    .info-list i {
+      color: var(--accent);
+      font-size: 18px;
+      width: 24px; padding-top: 3px;
+    }
+    .info-list a { color: #fff; }
+    .info-list a:hover { color: var(--accent); }
+    .info-list .hours-block > div { color: rgba(255,255,255,0.9); }
+    .closed { color: var(--accent); font-weight: 600; }
+
+    .map-wrap {
+      margin: 22px 0 20px;
+      border-radius: var(--radius);
+      overflow: hidden;
+      border: 1px solid var(--line);
+      height: 250px;
+    }
+    .map-wrap iframe {
+      width: 100%; height: 100%; border: 0;
+      filter: grayscale(0.45) invert(0.9) contrast(0.85);
+    }
+
+    .contact-form {
+      padding: 40px;
+      border-radius: var(--radius);
+    }
+    .contact-form h3 { color: #fff; margin-bottom: 22px; }
+    .contact-form label { display: block; margin-bottom: 16px; }
+    .contact-form label > span {
+      display: block;
+      font-family: var(--f-head);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin-bottom: 8px;
+    }
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+      width: 100%;
+      padding: 14px 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      color: #fff;
+      font: inherit;
+      transition: border-color .25s ease, background .25s ease;
+    }
+    .contact-form input:focus,
+    .contact-form select:focus,
+    .contact-form textarea:focus {
+      outline: none; border-color: var(--accent);
+      background: rgba(255,255,255,0.06);
+    }
+    .contact-form .row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .contact-form select option { background: #111; color: #fff; }
+    .contact-form button { width: 100%; justify-content: center; margin-top: 8px; }
+    .form-note { font-size: 13px; margin-top: 14px; color: var(--muted); text-align: center; }
+    .form-note a { color: var(--gold); }
+    .form-status {
+      margin-top: 14px; text-align: center;
+      font-size: 14px; min-height: 20px;
+    }
+    .form-status.ok  { color: var(--wa); }
+    .form-status.err { color: var(--accent); }
+
+    /* =============================================================
+       Footer
+       ============================================================= */
+    .footer {
+      background: #050505;
+      border-top: 1px solid var(--line);
+      padding: 70px 0 24px;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1.5fr;
+      gap: 50px;
+      margin-bottom: 44px;
+    }
+    .footer-brand .tagline {
+      font-family: var(--f-head);
+      color: var(--gold);
+      letter-spacing: 2.5px;
+      font-size: 13px;
+      margin-top: 16px;
+      text-transform: uppercase;
+    }
+    .socials { display: flex; gap: 10px; margin-top: 20px; }
+    .socials a {
+      width: 42px; height: 42px; border-radius: 50%;
+      display: grid; place-items: center;
+      border: 1px solid var(--line);
+      color: var(--text-dim);
+      background: rgba(255,255,255,0.02);
+      transition: background .25s ease, color .25s ease, transform .25s ease;
+    }
+    .socials a:hover { background: var(--accent); color: #fff; transform: translateY(-3px); }
+    .footer h4 {
+      font-family: var(--f-head);
+      font-size: 13px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+    .footer-col a, .footer-col p {
+      display: flex; align-items: flex-start; gap: 10px;
+      color: var(--text-dim);
+      padding: 6px 0;
+      font-size: 14px;
+      margin: 0;
+    }
+    .footer-col a:hover { color: var(--accent); }
+    .footer-col i { color: var(--gold); padding-top: 4px; }
+    .footer-bottom {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 24px 24px 0;
+      border-top: 1px solid var(--line);
+      display: flex; justify-content: space-between;
+      color: var(--muted);
+      font-size: 13px;
+      flex-wrap: wrap; gap: 10px;
+    }
+    .footer-bottom .credit span { color: var(--gold); }
+
+    /* =============================================================
+       Floating action buttons
+       ============================================================= */
+    .fab-stack {
+      position: fixed;
+      right: 20px; bottom: 20px;
+      z-index: 90;
+      display: flex; flex-direction: column;
+      gap: 14px;
+    }
+    .fab {
+      width: 60px; height: 60px; border-radius: 50%;
+      display: grid; place-items: center;
+      color: #fff; font-size: 24px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.45);
+      transition: transform .25s ease, box-shadow .3s ease;
+      position: relative;
+    }
+    .fab-wa {
+      background: var(--wa);
+      animation: pulseGlow 2.2s ease-in-out infinite;
+    }
+    .fab-phone {
+      background: linear-gradient(135deg, var(--accent), #99202b);
+      animation: pulseGlowRed 2.2s ease-in-out infinite;
+      animation-delay: .6s;
+    }
+    .fab:hover { transform: scale(1.1) translateY(-2px); color: #fff; }
+    @keyframes pulseGlow {
+      0%, 100% { box-shadow: 0 12px 30px rgba(0,0,0,0.4), 0 0 0 0 rgba(37,211,102,0.6); }
+      50%      { box-shadow: 0 12px 30px rgba(0,0,0,0.4), 0 0 0 16px rgba(37,211,102,0); }
+    }
+    @keyframes pulseGlowRed {
+      0%, 100% { box-shadow: 0 12px 30px rgba(0,0,0,0.4), 0 0 0 0 rgba(230,57,70,0.6); }
+      50%      { box-shadow: 0 12px 30px rgba(0,0,0,0.4), 0 0 0 16px rgba(230,57,70,0); }
+    }
+
+    /* =============================================================
+       Responsive
+       ============================================================= */
+    @media (max-width: 960px) {
+      .about-grid, .contact-grid { grid-template-columns: 1fr; gap: 48px; }
+      .about-media { max-width: 480px; margin: 0 auto; aspect-ratio: 5 / 4; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .masonry { grid-template-columns: repeat(2, 1fr); grid-auto-rows: 170px; }
+      .tile.lg { grid-column: span 2; grid-row: span 2; }
+    }
+    @media (max-width: 780px) {
+      .section { padding: 80px 0; }
+      .nav-links, .nav-cta { display: none; }
+      .nav-toggle { display: flex; }
+      .hero { min-height: 92vh; padding: 120px 20px 100px; }
+      .promo-inner { flex-direction: column; text-align: center; padding: 28px 22px; }
+      .stats { grid-template-columns: 1fr; }
+      .footer-bottom { flex-direction: column; align-items: flex-start; }
+      .brand-sub { display: none; }
+      .contact-form { padding: 28px 22px; }
+    }
+    @media (max-width: 500px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .contact-form .row { grid-template-columns: 1fr; }
+      .price-card.featured { transform: none; }
+      .lb-prev { left: 8px; } .lb-next { right: 8px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: 0.001ms !important; transition-duration: 0.001ms !important; }
+      html { scroll-behavior: auto; }
+      .reveal, .reveal-left, .reveal-right { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== Preloader ========== -->
+  <div id="preloader" aria-hidden="true">
+    <div class="pre-ring"></div>
+    <div class="pre-text">DOWNTOWN AUTO</div>
+  </div>
+
+  <!-- ========== Navbar ========== -->
+  <header id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="brand" aria-label="Downtown Auto Detailing home">
+        <span class="brand-mark"><i class="fa-solid fa-wrench"></i></span>
+        <span class="brand-text">
+          <span class="brand-name">Downtown Auto</span>
+          <span class="brand-sub">Detailing &amp; Repair</span>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a class="btn btn-wa nav-cta"
+         href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20for%20auto%20detailing%2Frepair."
+         target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Book on WhatsApp
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="nav-mobile" aria-hidden="true">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#contact">Contact</a>
+      <a class="btn btn-wa"
+         href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20for%20auto%20detailing%2Frepair."
+         target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i> Book on WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- ========== Hero ========== -->
+  <section id="home" class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <img src="https://img1.wsimg.com/isteam/stock/98074/:/rs=h:1000,cg:true,m" alt="" />
+    </div>
+    <div class="hero-vignette" aria-hidden="true"></div>
+    <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span> San Bruno, CA · Est. 25+ Years
+      </div>
+      <h1 class="hero-title">
+        <span class="line">Because Every</span>
+        <span class="line accent-line">Detail Counts.</span>
+      </h1>
+      <p class="hero-sub">Premium Auto Detailing, Repair &amp; Restoration — Where Craftsmanship Meets Precision.</p>
+      <div class="hero-cta">
+        <a class="btn btn-wa btn-lg"
+           href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20for%20auto%20detailing%2Frepair."
+           target="_blank" rel="noopener">
+          <i class="fa-brands fa-whatsapp"></i> Book via WhatsApp
+        </a>
+        <a class="btn btn-outline btn-lg" href="#services">
+          Explore Services <i class="fa-solid fa-arrow-down"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true">
+      <div class="arrow"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <div class="neon-divider" aria-hidden="true"></div>
+
+  <!-- ========== Services ========== -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">What We Do</span>
+        <h2>Precision Services, Uncompromising Quality</h2>
+        <p>From concours-level detailing to complete collision repair, our shop delivers dealership-grade craftsmanship on every vehicle we touch.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card glass reveal" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.25">
+          <div class="svc-icon"><i class="fa-solid fa-sparkles"></i></div>
+          <h3>Auto Detailing</h3>
+          <p>Interior shampoo, clay bar, paint correction, steam cleaning, headlight restoration, odor removal, engine bay &amp; more.</p>
+          <a class="svc-link" href="#pricing">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service-card glass reveal" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.25">
+          <div class="svc-icon"><i class="fa-solid fa-gears"></i></div>
+          <h3>Repair &amp; Maintenance</h3>
+          <p>Engine, transmission, brakes, AC, suspension, diagnostics and electrical — done right the first time.</p>
+          <a class="svc-link" href="#contact">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service-card glass reveal" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.25">
+          <div class="svc-icon"><i class="fa-solid fa-car-side"></i></div>
+          <h3>Classic Car Restoration</h3>
+          <p>25+ years of restoring vintage vehicles to showroom glory. Frame-off, paint, chrome and upholstery craftsmanship.</p>
+          <a class="svc-link" href="#restoration">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article class="service-card glass reveal" data-tilt data-tilt-max="10" data-tilt-glare data-tilt-max-glare="0.25">
+          <div class="svc-icon"><i class="fa-solid fa-car-burst"></i></div>
+          <h3>Collision Repair</h3>
+          <p>From minor dents to full collision damage. Frame straightening, panel replacement and factory-match paint.</p>
+          <a class="svc-link" href="#contact">Learn More <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="neon-divider" aria-hidden="true"></div>
+
+  <!-- ========== About ========== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-media reveal-left">
+          <img loading="lazy" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1200" alt="Luxury car detailed to a mirror finish" />
+        </div>
+        <div class="about-text reveal-right">
+          <span class="kicker">About the Shop</span>
+          <h2>A Family Shop. A Craftsman's Standard.</h2>
+          <p>For more than 25 years, Downtown Auto Detailing &amp; Repair has been San Bruno's trusted destination for meticulous detailing and expert automotive service. Jaime and his crew treat every vehicle like their own — from daily drivers to concours-ready classics.</p>
+          <p>We specialize in Ford, Chevy, Tesla, Lexus, Subaru, Mercedes, GMC, Porsche, Cadillac, Volvo and more. Every job is finished to exceed expectations — because we're passionate about cars, and we do it right.</p>
+          <div class="stats">
+            <div class="stat">
+              <div><span class="stat-num" data-count="25">0</span><span class="stat-plus">+</span></div>
+              <span class="stat-label">Years Experience</span>
+            </div>
+            <div class="stat">
+              <div><span class="stat-num" data-count="500">0</span><span class="stat-plus">+</span></div>
+              <span class="stat-label">Cars Restored</span>
+            </div>
+            <div class="stat">
+              <div><span class="stat-num" data-count="100">0</span><span class="stat-plus">%</span></div>
+              <span class="stat-label">Satisfaction</span>
+            </div>
+          </div>
+          <div class="about-cta">
+            <a class="btn btn-primary" href="#contact">Get a Free Quote</a>
+            <a class="btn btn-wa"
+               href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20for%20auto%20detailing%2Frepair."
+               target="_blank" rel="noopener">
+              <i class="fa-brands fa-whatsapp"></i> WhatsApp Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Brands marquee ========== -->
+  <section class="brands" aria-label="Vehicles we service">
+    <div class="brands-title">Vehicles We Service</div>
+    <div class="marquee">
+      <div class="marquee-track">
+        <span>Ford</span><span>·</span>
+        <span>Chevrolet</span><span>·</span>
+        <span>Tesla</span><span>·</span>
+        <span>Lexus</span><span>·</span>
+        <span>Subaru</span><span>·</span>
+        <span>Mercedes-Benz</span><span>·</span>
+        <span>GMC</span><span>·</span>
+        <span>Porsche</span><span>·</span>
+        <span>Cadillac</span><span>·</span>
+        <span>Volvo</span><span>·</span>
+        <span>BMW</span><span>·</span>
+        <span>Audi</span><span>·</span>
+        <!-- duplicate for seamless loop -->
+        <span>Ford</span><span>·</span>
+        <span>Chevrolet</span><span>·</span>
+        <span>Tesla</span><span>·</span>
+        <span>Lexus</span><span>·</span>
+        <span>Subaru</span><span>·</span>
+        <span>Mercedes-Benz</span><span>·</span>
+        <span>GMC</span><span>·</span>
+        <span>Porsche</span><span>·</span>
+        <span>Cadillac</span><span>·</span>
+        <span>Volvo</span><span>·</span>
+        <span>BMW</span><span>·</span>
+        <span>Audi</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <div class="neon-divider" aria-hidden="true"></div>
+
+  <!-- ========== Restoration video ========== -->
+  <section id="restoration" class="section restoration">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Classic Car Restoration</span>
+        <h2>Restoration in Action</h2>
+        <p>See our classic car restoration process — 25 years of expertise on display.</p>
+      </div>
+      <div class="video-wrap reveal">
+        <div class="video-frame">
+          <iframe
+            src="https://player.vimeo.com/video/939233866?h=482a615e28&autoplay=0&title=0&portrait=0&byline=0&badge=0&loop=0&muted=0&controls=1"
+            title="Downtown Auto — Classic Car Restoration"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="neon-divider" aria-hidden="true"></div>
+
+  <!-- ========== Gallery ========== -->
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Our Work</span>
+        <h2>Gallery</h2>
+        <p>A selection of recent details, restorations and repairs from the shop floor.</p>
+      </div>
+
+      <div class="masonry reveal">
+        <a class="tile lg" href="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600" data-lb>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800" alt="Foam wash covering a luxury car during exterior detail" />
+        </a>
+        <a class="tile" href="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=1600" data-lb>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800" alt="Professional car wash in progress" />
+        </a>
+        <a class="tile" href="https://images.unsplash.com/photo-1600705722908-bdb6e2cc8cf9?w=1600" data-lb>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1600705722908-bdb6e2cc8cf9?w=800" alt="Auto repair technician working under a vehicle" />
+        </a>
+        <a class="tile tall" href="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=1600" data-lb>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1615906655593-ad0386982a0f?w=800" alt="Classic car in mid-restoration" />
+        </a>
+        <a class="tile" href="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600" data-lb>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=800" alt="Detailed luxury sports car exterior" />
+        </a>
+        <a class="tile" href="https://images.unsplash.com/photo-1541443131876-44b03de101c5?w=1600" data-lb>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1541443131876-44b03de101c5?w=800" alt="Cleaned leather interior of a modern car" />
+        </a>
+        <a class="tile tall" href="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=1600" data-lb>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1590362891991-f776e747a588?w=800" alt="Precision detailing close-up on a car body panel" />
+        </a>
+        <a class="tile" href="https://images.unsplash.com/photo-1519641471654-76ce0107ad5b?w=1600" data-lb>
+          <img loading="lazy" src="https://images.unsplash.com/photo-1519641471654-76ce0107ad5b?w=800" alt="Detailed engine bay after full service" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true">
+    <button class="lb-close" aria-label="Close">&times;</button>
+    <button class="lb-prev" aria-label="Previous">&#10094;</button>
+    <img src="" alt="" />
+    <button class="lb-next" aria-label="Next">&#10095;</button>
+  </div>
+
+  <div class="neon-divider" aria-hidden="true"></div>
+
+  <!-- ========== Testimonials ========== -->
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Customer Stories</span>
+        <h2>What Customers Say</h2>
+      </div>
+
+      <div class="review-grid">
+        <figure class="review glass reveal">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <blockquote>"Jaime and his crew treat each car that comes like their own!"</blockquote>
+          <figcaption><i class="fa-brands fa-yelp"></i> Yelp Reviewer</figcaption>
+        </figure>
+
+        <figure class="review glass reveal">
+          <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+          <blockquote>"Jaime is awesome! He even drove my car to me when he was done! Above and beyond!"</blockquote>
+          <figcaption><i class="fa-brands fa-yelp"></i> Yelp Reviewer</figcaption>
+        </figure>
+      </div>
+
+      <div class="yelp-cta reveal">
+        <a href="https://www.yelp.com/biz/gzCBfOB-nPOZ2VS3iI37xA" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class="fa-brands fa-yelp"></i> Read More Reviews on Yelp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="neon-divider" aria-hidden="true"></div>
+
+  <!-- ========== Pricing ========== -->
+  <section id="pricing" class="section pricing">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Transparent Pricing</span>
+        <h2>Packages &amp; Rates</h2>
+        <p>Every vehicle is different — call or WhatsApp for a custom quote on full detail packages.</p>
+      </div>
+
+      <div class="pricing-grid">
+        <article class="price-card glass reveal">
+          <h3>Basic Wash</h3>
+          <div class="price"><span class="dollar">$</span><span class="num">40</span><span class="unit">+</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Exterior hand wash</li>
+            <li><i class="fa-solid fa-check"></i> Wheels &amp; tires</li>
+            <li><i class="fa-solid fa-check"></i> Rinse &amp; hand dry</li>
+            <li><i class="fa-solid fa-check"></i> Windows cleaned</li>
+          </ul>
+          <a class="btn btn-wa"
+             href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20to%20book%20a%20basic%20wash."
+             target="_blank" rel="noopener">Book on WhatsApp</a>
+        </article>
+
+        <article class="price-card glass featured reveal">
+          <div class="ribbon">Most Popular</div>
+          <h3>Detail Package</h3>
+          <div class="price"><span class="num">Custom</span><span class="unit">Quote</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Interior shampoo &amp; steam</li>
+            <li><i class="fa-solid fa-check"></i> Engine bay clean</li>
+            <li><i class="fa-solid fa-check"></i> Clay bar + paint correction</li>
+            <li><i class="fa-solid fa-check"></i> Headlight restoration</li>
+            <li><i class="fa-solid fa-check"></i> Odor removal</li>
+          </ul>
+          <a class="btn btn-primary"
+             href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20a%20quote%20on%20the%20full%20detail%20package."
+             target="_blank" rel="noopener">Get a Quote</a>
+        </article>
+
+        <article class="price-card glass reveal">
+          <h3>Basic Vacuum</h3>
+          <div class="price"><span class="dollar">$</span><span class="num">40</span><span class="unit">+</span></div>
+          <ul>
+            <li><i class="fa-solid fa-check"></i> Full interior vacuum</li>
+            <li><i class="fa-solid fa-check"></i> Dash &amp; console wipe</li>
+            <li><i class="fa-solid fa-check"></i> Door jambs</li>
+            <li><i class="fa-solid fa-check"></i> Floor mats</li>
+          </ul>
+          <a class="btn btn-wa"
+             href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20a%20basic%20vacuum%20service."
+             target="_blank" rel="noopener">Book on WhatsApp</a>
+        </article>
+      </div>
+
+      <div class="promo reveal">
+        <div class="promo-inner">
+          <div>
+            <span class="promo-tag">This Month Only</span>
+            <h3>10% OFF Your Next Detail</h3>
+            <p>Mention this ad when you call or message us to claim the discount.</p>
+          </div>
+          <a class="btn btn-wa btn-lg"
+             href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20to%20claim%20the%2010%25%20discount%20on%20detailing!"
+             target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> Claim via WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="neon-divider" aria-hidden="true"></div>
+
+  <!-- ========== Contact ========== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <span class="kicker">Get in Touch</span>
+          <h2>Visit Us</h2>
+          <ul class="info-list">
+            <li>
+              <i class="fa-solid fa-location-dot"></i>
+              <a href="https://www.google.com/maps/search/?api=1&query=1145+San+Mateo+Ave+San+Bruno+CA+94066" target="_blank" rel="noopener">
+                1145 San Mateo Ave, San Bruno CA 94066
+              </a>
+            </li>
+            <li>
+              <i class="fa-brands fa-whatsapp" style="color:#25D366"></i>
+              <a href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20for%20auto%20detailing%2Frepair." target="_blank" rel="noopener">
+                415-424-5807 (WhatsApp)
+              </a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i>
+              <a href="mailto:downtownautosf@gmail.com">downtownautosf@gmail.com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-clock"></i>
+              <div class="hours-block">
+                <div>Mon – Fri: 8:00 AM – 7:00 PM</div>
+                <div>Saturday: 8:00 AM – 5:00 PM</div>
+                <div>Sunday: <span class="closed">Closed</span></div>
+              </div>
+            </li>
+          </ul>
+
+          <div class="map-wrap">
+            <iframe
+              src="https://maps.google.com/maps?q=1145+San+Mateo+Ave,+San+Bruno+CA+94066&output=embed"
+              title="Map to Downtown Auto Detailing & Repair"
+              loading="lazy"
+              allowfullscreen></iframe>
+          </div>
+
+          <a class="btn btn-primary"
+             href="https://www.google.com/maps/search/?api=1&query=1145+San+Mateo+Ave+San+Bruno+CA+94066"
+             target="_blank" rel="noopener">
+            <i class="fa-solid fa-diamond-turn-right"></i> Get Directions
+          </a>
+        </div>
+
+        <form class="contact-form glass reveal-right" id="contactForm" novalidate>
+          <h3>Send Us a Message</h3>
+          <div class="row">
+            <label>
+              <span>Full Name</span>
+              <input type="text" name="name" required autocomplete="name" placeholder="Your full name" />
+            </label>
+            <label>
+              <span>Phone Number</span>
+              <input type="tel" name="phone" required autocomplete="tel" placeholder="(415) 555-1234" />
+            </label>
+          </div>
+          <label>
+            <span>Email Address</span>
+            <input type="email" name="email" required autocomplete="email" placeholder="you@example.com" />
+          </label>
+          <label>
+            <span>Service Needed</span>
+            <select name="service" required>
+              <option value="">Select a service…</option>
+              <option>Auto Detailing</option>
+              <option>Repair &amp; Maintenance</option>
+              <option>Classic Restoration</option>
+              <option>Collision Repair</option>
+              <option>Other</option>
+            </select>
+          </label>
+          <label>
+            <span>Preferred Date &amp; Time</span>
+            <input type="datetime-local" name="datetime" />
+          </label>
+          <label>
+            <span>Message</span>
+            <textarea name="message" rows="5" placeholder="Tell us about your vehicle and what you need…" required></textarea>
+          </label>
+          <button type="submit" class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-note">Prefer instant replies? <a href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20for%20auto%20detailing%2Frepair." target="_blank" rel="noopener">Message us on WhatsApp</a>.</p>
+          <div class="form-status" id="formStatus" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="brand">
+            <span class="brand-mark"><i class="fa-solid fa-wrench"></i></span>
+            <span class="brand-text">
+              <span class="brand-name">Downtown Auto</span>
+              <span class="brand-sub">Detailing &amp; Repair</span>
+            </span>
+          </a>
+          <p class="tagline">Because every detail counts.</p>
+          <div class="socials">
+            <a href="https://www.yelp.com/biz/gzCBfOB-nPOZ2VS3iI37xA" aria-label="Yelp" target="_blank" rel="noopener"><i class="fa-brands fa-yelp"></i></a>
+            <a href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20for%20auto%20detailing%2Frepair." aria-label="WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:downtownautosf@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <a href="https://www.google.com/maps/search/?api=1&query=1145+San+Mateo+Ave+San+Bruno+CA+94066" target="_blank" rel="noopener">
+            <i class="fa-solid fa-location-dot"></i> 1145 San Mateo Ave, San Bruno CA 94066
+          </a>
+          <a href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20for%20auto%20detailing%2Frepair." target="_blank" rel="noopener">
+            <i class="fa-brands fa-whatsapp"></i> 415-424-5807
+          </a>
+          <a href="mailto:downtownautosf@gmail.com">
+            <i class="fa-solid fa-envelope"></i> downtownautosf@gmail.com
+          </a>
+          <p><i class="fa-solid fa-clock"></i> Mon–Fri 8am–7pm · Sat 8am–5pm · Sun Closed</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 Downtown Auto Detailing &amp; Repair · All Rights Reserved</p>
+      <p class="credit">Built by <span>Dafa Studio</span></p>
+    </div>
+  </footer>
+
+  <!-- ========== Floating action buttons ========== -->
+  <div class="fab-stack" aria-label="Quick contact">
+    <a class="fab fab-wa"
+       href="https://wa.me/14154245807?text=Hi%2C%20I%27d%20like%20to%20book%20an%20appointment%20for%20auto%20detailing%2Frepair."
+       target="_blank" rel="noopener" aria-label="WhatsApp us">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <a class="fab fab-phone" href="tel:+14154245807" aria-label="Call us">
+      <i class="fa-solid fa-phone"></i>
+    </a>
+  </div>
+
+  <!-- ========== Libraries ========== -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+
+  <script>
+    /* ==============================================================
+       Downtown Auto — Interactivity
+       ============================================================== */
+    (function () {
+      "use strict";
+      const $  = (s, c = document) => c.querySelector(s);
+      const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
+      const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+      document.addEventListener("DOMContentLoaded", () => {
+        initNavbar();
+        initReveal();
+        initCounters();
+        initTilt();
+        initLightbox();
+        initForm();
+        initHeroParticles();
+        initParallax();
+      });
+      window.addEventListener("load", () => {
+        const pre = $("#preloader");
+        if (pre) setTimeout(() => pre.classList.add("hide"), 250);
+        heroFlourish();
+      });
+
+      /* ---------- Navbar ---------- */
+      function initNavbar() {
+        const nav = $("#navbar");
+        const toggle = $(".nav-toggle");
+        const mobile = $(".nav-mobile");
+        const onScroll = () => {
+          nav.classList.toggle("scrolled", window.scrollY > 40);
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+
+        if (toggle && mobile) {
+          toggle.addEventListener("click", () => {
+            const open = mobile.classList.toggle("show");
+            toggle.classList.toggle("open", open);
+            toggle.setAttribute("aria-expanded", String(open));
+            mobile.setAttribute("aria-hidden", String(!open));
+          });
+          $$(".nav-mobile a").forEach((a) =>
+            a.addEventListener("click", () => {
+              mobile.classList.remove("show");
+              toggle.classList.remove("open");
+              toggle.setAttribute("aria-expanded", "false");
+              mobile.setAttribute("aria-hidden", "true");
+            })
+          );
+        }
+      }
+
+      /* ---------- Reveal on scroll ---------- */
+      function initReveal() {
+        const items = $$(".reveal, .reveal-left, .reveal-right");
+        if (!items.length) return;
+        if (reduced) { items.forEach((el) => el.classList.add("in")); return; }
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) {
+              const idx = Number(e.target.dataset.i || 0);
+              setTimeout(() => e.target.classList.add("in"), idx * 90);
+              io.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+        items.forEach((el, i) => { el.dataset.i = String(i % 6); io.observe(el); });
+      }
+
+      /* ---------- Stat counters ---------- */
+      function initCounters() {
+        const nums = $$(".stat-num");
+        const animate = (el) => {
+          const target = Number(el.dataset.count || 0);
+          const dur = 1400;
+          const start = performance.now();
+          const step = (now) => {
+            const p = Math.min(1, (now - start) / dur);
+            const eased = 1 - Math.pow(1 - p, 3);
+            el.textContent = Math.round(target * eased).toString();
+            if (p < 1) requestAnimationFrame(step);
+          };
+          requestAnimationFrame(step);
+        };
+        const io = new IntersectionObserver((entries) => {
+          entries.forEach((e) => {
+            if (e.isIntersecting) { animate(e.target); io.unobserve(e.target); }
+          });
+        }, { threshold: 0.5 });
+        nums.forEach((n) => io.observe(n));
+      }
+
+      /* ---------- Vanilla tilt ---------- */
+      function initTilt() {
+        if (reduced || typeof VanillaTilt === "undefined") return;
+        const cards = $$("[data-tilt]");
+        if (cards.length) {
+          VanillaTilt.init(cards, {
+            max: 10,
+            speed: 500,
+            glare: true,
+            "max-glare": 0.22,
+            gyroscope: false,
+          });
+        }
+      }
+
+      /* ---------- Lightbox ---------- */
+      function initLightbox() {
+        const tiles = $$("[data-lb]");
+        const lb = $("#lightbox");
+        if (!tiles.length || !lb) return;
+        const img = lb.querySelector("img");
+        const close = lb.querySelector(".lb-close");
+        const prev  = lb.querySelector(".lb-prev");
+        const next  = lb.querySelector(".lb-next");
+        let idx = 0;
+
+        const show = (i) => {
+          idx = (i + tiles.length) % tiles.length;
+          const t = tiles[idx];
+          img.src = t.getAttribute("href");
+          img.alt = t.querySelector("img")?.alt || "";
+          lb.classList.add("open");
+          lb.setAttribute("aria-hidden", "false");
+          document.body.style.overflow = "hidden";
+        };
+        const hide = () => {
+          lb.classList.remove("open");
+          lb.setAttribute("aria-hidden", "true");
+          document.body.style.overflow = "";
+          img.src = "";
+        };
+
+        tiles.forEach((t, i) => t.addEventListener("click", (e) => { e.preventDefault(); show(i); }));
+        close.addEventListener("click", hide);
+        prev.addEventListener("click", () => show(idx - 1));
+        next.addEventListener("click", () => show(idx + 1));
+        lb.addEventListener("click", (e) => { if (e.target === lb) hide(); });
+        window.addEventListener("keydown", (e) => {
+          if (!lb.classList.contains("open")) return;
+          if (e.key === "Escape") hide();
+          if (e.key === "ArrowRight") show(idx + 1);
+          if (e.key === "ArrowLeft")  show(idx - 1);
+        });
+      }
+
+      /* ---------- Contact form → WhatsApp handoff ---------- */
+      function initForm() {
+        const form = $("#contactForm");
+        const status = $("#formStatus");
+        if (!form) return;
+        form.addEventListener("submit", (e) => {
+          e.preventDefault();
+          const d = new FormData(form);
+          const required = ["name", "phone", "email", "service", "message"];
+          const missing = required.some((n) => !String(d.get(n) || "").trim());
+          if (missing) {
+            status.textContent = "Please complete every field so we can help.";
+            status.className = "form-status err";
+            return;
+          }
+          const msg = [
+            "Hi Downtown Auto — new inquiry from your website:",
+            "• Name: "     + d.get("name"),
+            "• Phone: "    + d.get("phone"),
+            "• Email: "    + d.get("email"),
+            "• Service: "  + d.get("service"),
+            "• Preferred: "+ (d.get("datetime") || "flexible"),
+            "",
+            String(d.get("message")),
+          ].join("\n");
+          const url = "https://wa.me/14154245807?text=" + encodeURIComponent(msg);
+          status.textContent = "Opening WhatsApp so you can send this instantly…";
+          status.className = "form-status ok";
+          window.open(url, "_blank", "noopener");
+          form.reset();
+          setTimeout(() => (status.textContent = ""), 6000);
+        });
+      }
+
+      /* ---------- Parallax on hero background ---------- */
+      function initParallax() {
+        if (reduced) return;
+        const bg = $(".hero-bg");
+        if (!bg) return;
+        const onScroll = () => {
+          const y = window.scrollY;
+          if (y < window.innerHeight) {
+            bg.style.transform = "translate3d(0," + y * 0.35 + "px,0)";
+          }
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+      }
+
+      /* ---------- Hero flourish (GSAP) ---------- */
+      function heroFlourish() {
+        if (reduced || typeof gsap === "undefined") return;
+        gsap.from(".hero-badge", { y: 24, opacity: 0, duration: 0.8, ease: "power3.out" });
+        gsap.from(".hero-title .line", {
+          y: 70, opacity: 0, duration: 1, stagger: 0.15,
+          ease: "power4.out", delay: 0.15,
+        });
+        gsap.from(".hero-sub", { y: 20, opacity: 0, duration: 0.9, delay: 0.55, ease: "power3.out" });
+        gsap.from(".hero-cta .btn", {
+          y: 20, opacity: 0, duration: 0.7,
+          stagger: 0.12, delay: 0.75, ease: "power3.out",
+        });
+      }
+
+      /* ---------- Three.js hero particles ---------- */
+      function initHeroParticles() {
+        const canvas = $("#hero-canvas");
+        if (!canvas || typeof THREE === "undefined" || reduced) return;
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(55, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 60;
+
+        const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+        renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+        resize();
+
+        const count = window.innerWidth < 768 ? 900 : 1800;
+        const geometry = new THREE.BufferGeometry();
+        const positions = new Float32Array(count * 3);
+        const colors    = new Float32Array(count * 3);
+        const speeds    = new Float32Array(count);
+
+        const cRed  = new THREE.Color(0xe63946);
+        const cGold = new THREE.Color(0xc9a84c);
+        const cWht  = new THREE.Color(0xffffff);
+
+        for (let i = 0; i < count; i++) {
+          const i3 = i * 3;
+          positions[i3]     = (Math.random() - 0.5) * 220;
+          positions[i3 + 1] = (Math.random() - 0.5) * 140;
+          positions[i3 + 2] = (Math.random() - 0.5) * 220;
+          const r = Math.random();
+          const c = r < 0.55 ? cWht : r < 0.85 ? cGold : cRed;
+          colors[i3] = c.r; colors[i3 + 1] = c.g; colors[i3 + 2] = c.b;
+          speeds[i] = 0.02 + Math.random() * 0.05;
+        }
+        geometry.setAttribute("position", new THREE.BufferAttribute(positions, 3));
+        geometry.setAttribute("color",    new THREE.BufferAttribute(colors, 3));
+
+        const material = new THREE.PointsMaterial({
+          size: 0.6, vertexColors: true, transparent: true,
+          opacity: 0.9, sizeAttenuation: true,
+          blending: THREE.AdditiveBlending, depthWrite: false,
+        });
+        const points = new THREE.Points(geometry, material);
+        scene.add(points);
+
+        const torus = new THREE.Mesh(
+          new THREE.TorusGeometry(18, 3.2, 12, 60),
+          new THREE.MeshBasicMaterial({ color: 0xe63946, wireframe: true, transparent: true, opacity: 0.18 })
+        );
+        torus.position.set(0, 0, -30);
+        scene.add(torus);
+
+        const ring = new THREE.Mesh(
+          new THREE.TorusGeometry(28, 0.18, 8, 100),
+          new THREE.MeshBasicMaterial({ color: 0xc9a84c, transparent: true, opacity: 0.25 })
+        );
+        ring.position.set(0, 0, -20);
+        scene.add(ring);
+
+        const mouse = { x: 0, y: 0, tx: 0, ty: 0 };
+        window.addEventListener("mousemove", (e) => {
+          mouse.tx = (e.clientX / window.innerWidth  - 0.5) * 2;
+          mouse.ty = (e.clientY / window.innerHeight - 0.5) * 2;
+        }, { passive: true });
+        window.addEventListener("resize", resize);
+
+        function resize() {
+          const w = window.innerWidth, h = window.innerHeight;
+          renderer.setSize(w, h, false);
+          camera.aspect = w / h;
+          camera.updateProjectionMatrix();
+        }
+
+        const clock = new THREE.Clock();
+        (function animate() {
+          const t = clock.getElapsedTime();
+          mouse.x += (mouse.tx - mouse.x) * 0.05;
+          mouse.y += (mouse.ty - mouse.y) * 0.05;
+
+          const pos = geometry.attributes.position.array;
+          for (let i = 0; i < count; i++) {
+            const i3 = i * 3;
+            pos[i3 + 1] += speeds[i] * 0.4;
+            if (pos[i3 + 1] > 80) pos[i3 + 1] = -80;
+          }
+          geometry.attributes.position.needsUpdate = true;
+
+          points.rotation.y = t * 0.04 + mouse.x * 0.2;
+          points.rotation.x = mouse.y * 0.15;
+
+          torus.rotation.x = t * 0.35;
+          torus.rotation.y = t * 0.25;
+          ring.rotation.z  = t * 0.15;
+          ring.rotation.x  = Math.PI / 2 + Math.sin(t * 0.3) * 0.05;
+
+          camera.position.x =  mouse.x * 4;
+          camera.position.y = -mouse.y * 3;
+          camera.lookAt(0, 0, 0);
+
+          renderer.render(scene, camera);
+          requestAnimationFrame(animate);
+        })();
+      }
+    })();
+  </script>
+</body>
+</html>
